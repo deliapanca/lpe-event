@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>262,346</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>804,3255</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -58,26 +58,34 @@
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="FillFormAndSend" sap:VirtualizedContainerService.HintSize="222,266" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="Fills the form from the FWF Cool Humans page using the data stored in the configuration file, sends the CV, then checks if the message displayed is indicating that the CV  been successfully sent or not." DisplayName="FillFormAndSend" sap:VirtualizedContainerService.HintSize="764,3175" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="browser" />
+      <Variable x:TypeArguments="x:String" Name="myOption" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message 'Completare campuri'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Starting workflow Completare Campuri...&quot;]" />
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser 'Cool Humans Page'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="e5aa5790a0eec1e99eac22b27c5e8616" Selector="&lt;html title='Cool Humans – FutureWorkForce' /&gt;">
+    <ui:LogMessage DisplayName="Log Message 'Completare campuri'" sap:VirtualizedContainerService.HintSize="742,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Starting workflow Completare Campuri...&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser 'Cool Humans Page'" sap:VirtualizedContainerService.HintSize="742,2878" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="e5aa5790a0eec1e99eac22b27c5e8616" Selector="&lt;html title='Cool Humans – FutureWorkForce' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="728,2692" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="messageSent" />
             </Sequence.Variables>
@@ -86,7 +94,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base 'For First Name'" sap:VirtualizedContainerService.HintSize="314,51" sap2010:WorkflowViewState.IdRef="AnchorBase_1">
+            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base 'For First Name'" sap:VirtualizedContainerService.HintSize="706,226" sap2010:WorkflowViewState.IdRef="AnchorBase_1">
               <ui:AnchorBase.Action>
                 <ActivityAction x:TypeArguments="ui:Anchor">
                   <ActivityAction.Argument>
@@ -113,7 +121,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:AnchorBase>
-            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base 'For Last Name'" sap:VirtualizedContainerService.HintSize="314,51" sap2010:WorkflowViewState.IdRef="AnchorBase_2">
+            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base 'For Last Name'" sap:VirtualizedContainerService.HintSize="706,226" sap2010:WorkflowViewState.IdRef="AnchorBase_2">
               <ui:AnchorBase.Action>
                 <ActivityAction x:TypeArguments="ui:Anchor">
                   <ActivityAction.Argument>
@@ -146,7 +154,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:AnchorBase>
-            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base 'For Mobile'" sap:VirtualizedContainerService.HintSize="314,51" sap2010:WorkflowViewState.IdRef="AnchorBase_3">
+            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base 'For Mobile'" sap:VirtualizedContainerService.HintSize="706,226" sap2010:WorkflowViewState.IdRef="AnchorBase_3">
               <ui:AnchorBase.Action>
                 <ActivityAction x:TypeArguments="ui:Anchor">
                   <ActivityAction.Argument>
@@ -173,7 +181,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:AnchorBase>
-            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base 'For Email'" sap:VirtualizedContainerService.HintSize="314,51" sap2010:WorkflowViewState.IdRef="AnchorBase_4">
+            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base 'For Email'" sap:VirtualizedContainerService.HintSize="706,226" sap2010:WorkflowViewState.IdRef="AnchorBase_4">
               <ui:AnchorBase.Action>
                 <ActivityAction x:TypeArguments="ui:Anchor">
                   <ActivityAction.Argument>
@@ -200,9 +208,9 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:AnchorBase>
-            <ui:InputDialog DisplayName="Input Dialog 'Options'" sap:VirtualizedContainerService.HintSize="314,92" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Select options:" Options="[{&quot;From a Cool Human&quot;,&quot;IT Event&quot;,&quot;Social Media&quot;,&quot;Organic Search&quot;,&quot;It's a Secret&quot;}]" Title="How did you hear about us?">
+            <ui:InputDialog DisplayName="Input Dialog 'Options'" sap:VirtualizedContainerService.HintSize="706,92" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Select options:" Options="[{&quot;From a Cool Human&quot;,&quot;IT Event&quot;,&quot;Social Media&quot;,&quot;Organic Search&quot;,&quot;It's a Secret&quot;}]" Title="How did you hear about us?">
               <ui:InputDialog.Result>
-                <OutArgument x:TypeArguments="x:String">[browser]</OutArgument>
+                <OutArgument x:TypeArguments="x:String">[myOption]</OutArgument>
               </ui:InputDialog.Result>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -211,13 +219,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InputDialog>
-            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base 'Found Us'" sap:VirtualizedContainerService.HintSize="314,51" sap2010:WorkflowViewState.IdRef="AnchorBase_7">
+            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base 'Found Us'" sap:VirtualizedContainerService.HintSize="706,226" sap2010:WorkflowViewState.IdRef="AnchorBase_7">
               <ui:AnchorBase.Action>
                 <ActivityAction x:TypeArguments="ui:Anchor">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
                   </ActivityAction.Argument>
-                  <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'Option'" sap:VirtualizedContainerService.HintSize="314,134" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="From a Cool Human">
+                  <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'Option'" sap:VirtualizedContainerService.HintSize="314,134" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[myOption.ToString]">
                     <ui:SelectItem.Items>
                       <scg:List x:TypeArguments="x:String" Capacity="8">
                         <x:String>—</x:String>
@@ -248,7 +256,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:AnchorBase>
-            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base 'Attach CV'" sap:VirtualizedContainerService.HintSize="314,51" sap2010:WorkflowViewState.IdRef="AnchorBase_6">
+            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base 'Attach CV'" sap:VirtualizedContainerService.HintSize="706,198" sap2010:WorkflowViewState.IdRef="AnchorBase_6">
               <ui:AnchorBase.Action>
                 <ActivityAction x:TypeArguments="ui:Anchor">
                   <ActivityAction.Argument>
@@ -285,12 +293,17 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:AnchorBase>
-            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke AttachCV workflow" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="AttachCV.xaml">
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Sets the location of the CV using the path stored in the config file and inserts it into the file picker pop up." DisplayName="Invoke AttachCV workflow" sap:VirtualizedContainerService.HintSize="706,144" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="AttachCV.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </ui:InvokeWorkflowFile>
-            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Send'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Send'" sap:VirtualizedContainerService.HintSize="706,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -305,12 +318,12 @@
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="d6e46b861f828a400b340946193224d3" Selector="&lt;webctrl tag='INPUT' type='submit' /&gt;" WaitForReady="COMPLETE" />
               </ui:Click.Target>
             </ui:Click>
-            <ui:UiElementExists DisplayName="Element Exists 'Message Sent'" Exists="[messageSent]" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+            <ui:UiElementExists DisplayName="Element Exists 'Message Sent'" Exists="[messageSent]" sap:VirtualizedContainerService.HintSize="706,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
               <ui:UiElementExists.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="0a44db065af5dbeb107bdb897d6d5a8a" Selector="&lt;webctrl tag='DIV' aaname='Thank you for your message. It has been sent.' class='*mail-sent-ok' /&gt;" TimeoutMS="300000" WaitForReady="COMPLETE" />
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <If Condition="[messageSent]" DisplayName="If 'The CV was sent successfully'" sap:VirtualizedContainerService.HintSize="314,51" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[messageSent]" DisplayName="If 'The CV was sent successfully'" sap:VirtualizedContainerService.HintSize="706,392" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -335,6 +348,11 @@
           </Sequence>
         </ActivityAction>
       </ui:BrowserScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:BrowserScope>
   </Sequence>
 </Activity>

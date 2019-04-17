@@ -1,5 +1,5 @@
 {
-  "name": "PassedOrFailde_V2",
+  "name": "PassedOrFailed",
   "description": "Navigates to fwf grades and extract grades\r\n",
   "main": "Main.xaml",
   "dependencies": {

@@ -1,6 +1,6 @@
 {
-  "name": "Completare_Formular",
-  "description": "Blank Process",
+  "name": "SignMeUp",
+  "description": "Process that uploads a CV on the FWF Cool Humans platform.",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.UIAutomation.Activities": "[19.3.0]",

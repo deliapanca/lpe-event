@@ -902,11 +902,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "Completare_Formular",
-      "projectName": "Completare_Formular",
-      "projectPath": "G:\\Team Drives\\MISCELLANEOUS\\LPE\\Completare Formular\\Completare_Formular\\.local",
+      "projectUniqueName": "SignMeUp",
+      "projectName": "SignMeUp",
+      "projectPath": "D:\\LPE\\Processes\\SignMeUp\\.local",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "G:\\Team Drives\\MISCELLANEOUS\\LPE\\Completare Formular\\Completare_Formular\\.local"
+      "outputPath": "D:\\LPE\\Processes\\SignMeUp\\.local"
     },
     "frameworks": {
       "net461": {
