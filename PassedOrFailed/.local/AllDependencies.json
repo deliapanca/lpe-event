@@ -903,15 +903,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hp\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "PassedOrFailed",
       "projectName": "PassedOrFailed",
-      "projectPath": "D:\\LPE\\Processes\\PassedOrFailed\\.local",
-      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "D:\\LPE\\Processes\\PassedOrFailed\\.local"
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\lpe-event\\PassedOrFailed\\.local",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\lpe-event\\PassedOrFailed\\.local"
     },
     "frameworks": {
       "net461": {
